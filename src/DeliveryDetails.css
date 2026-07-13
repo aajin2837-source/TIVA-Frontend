@@ -1,0 +1,32 @@
+.delivery-card {
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.delivery-card h3 {
+  margin-bottom: 15px;
+}
+
+.delivery-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.delivery-row button {
+  border: none;
+  background: #d4af37;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delivery-info {
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}

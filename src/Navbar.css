@@ -1,0 +1,49 @@
+.profile-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile-popup{
+  position: absolute;
+  top: 55px;
+  right: -15px;
+  min-width: 180px;
+
+  background: white;
+  color: black;
+
+  padding: 12px;
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,.15);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: .3s;
+  z-index: 999;
+  text-align: center;
+}
+
+.profile-container:hover .profile-popup{
+  opacity: 1;
+  visibility: visible;
+}
+
+.profile-popup strong{
+  color: #d4af37;
+}
+
+.profile-popup::before{
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 25px;
+
+  width: 15px;
+  height: 15px;
+
+  background: white;
+  transform: rotate(45deg);
+}
