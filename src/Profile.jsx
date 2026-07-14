@@ -13,7 +13,7 @@ function Profile() {
 
   useEffect(() => {
     fetch(
-      `http://127.0.0.1:8000/api/profile/?user_id=${localStorage.getItem(
+      `https://tiva.onrender.com/api/profile/?user_id=${localStorage.getItem(
         "user_id"
       )}`
     )
@@ -33,7 +33,7 @@ function Profile() {
   const updateProfile = async () => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/api/profile/update/",
+        "https://tiva.onrender.com/api/profile/update/",
         {
           method: "POST",
           headers: {

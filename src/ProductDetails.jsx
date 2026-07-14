@@ -29,7 +29,7 @@ function ProductDetails() {
   const navigate = useNavigate();
   useEffect(() => {
     fetch(
-  `http://127.0.0.1:8000/api/reviews/?category=${category}&product_id=${id}`
+  `https://tiva.onrender.com/api/reviews/?category=${category}&product_id=${id}`
 )
   .then((res) => res.json())
   .then((data) => setReviews(data));
@@ -223,7 +223,7 @@ function ProductDetails() {
 
         <div className="details-image">
           <img
-            src={`http://127.0.0.1:8000${product.image}`}
+            src={`https://tiva.onrender.com${product.image}`}
             alt={product.title}
           />
         </div>

@@ -12,7 +12,7 @@ function ProductCard({ item, addToCart }) {
     >
       <div className="product-image">
         <img
-          src={`http://127.0.0.1:8000${item.image}`}
+          src={`https://tiva.onrender.com${item.image}`}
           alt={item.title}
         />
       </div>

@@ -26,7 +26,7 @@ function Payment() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/api/create-order/",
+        "https://tiva.onrender.com/api/create-order/",
         {
           method: "POST",
           headers: {
@@ -51,7 +51,7 @@ function Payment() {
         handler: async function (response) {
 
   await fetch(
-    "http://127.0.0.1:8000/api/save-order/",
+    "https://tiva.onrender.com/api/save-order/",
     {
       method: "POST",
       headers: {
