@@ -1,4 +1,4 @@
-const BASE_URL = "http://127.0.0.1:8000/api";
+const BASE_URL = "https://tiva.onrender.com/api";
 
 export const API = {
   coats: `${BASE_URL}/products/coats/`,

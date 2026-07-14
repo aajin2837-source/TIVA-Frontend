@@ -223,7 +223,7 @@ function ProductDetails() {
 
         <div className="details-image">
           <img
-            src={`https://tiva.onrender.com${product.image}`}
+            src={`https://tiva.onrender.com/${product.image}`}
             alt={product.title}
           />
         </div>
