@@ -380,7 +380,7 @@ function ProductPage() {
           <div className="product-card" key={item.id}>
             <div className="product-image">
               <img
-                src={`https://tiva.onrender.com${item.image}`}
+                src={`https://aajin.pythonanywhere.com${item.image}`}
                 alt={item.title}
               />
             </div>
