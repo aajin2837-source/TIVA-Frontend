@@ -29,7 +29,7 @@ function ProductDetails() {
   const navigate = useNavigate();
   useEffect(() => {
     fetch(
-  `https://tiva.onrender.com/api/reviews/?category=${category}&product_id=${id}`
+  `https://aajin.pythonanywhere.com/api/reviews/?category=${category}&product_id=${id}`
 )
   .then((res) => res.json())
   .then((data) => setReviews(data));
@@ -223,7 +223,7 @@ function ProductDetails() {
 
         <div className="details-image">
           <img
-            src={`https://tiva.onrender.com/${product.image}`}
+            src={`https://aajin.pythonanywhere.com${product.image}`}
             alt={product.title}
           />
         </div>

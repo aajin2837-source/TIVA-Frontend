@@ -13,7 +13,7 @@ function Profile() {
 
   useEffect(() => {
     fetch(
-      `https://tiva.onrender.com/api/profile/?user_id=${localStorage.getItem(
+      `https://aajin.pythonanywhere.com/api/profile/?user_id=${localStorage.getItem(
         "user_id"
       )}`
     )
@@ -33,7 +33,7 @@ function Profile() {
   const updateProfile = async () => {
     try {
       const response = await fetch(
-        "https://tiva.onrender.com/api/profile/update/",
+        "https://aajin.pythonanywhere.com/api/profile/update/",
         {
           method: "POST",
           headers: {

@@ -90,67 +90,67 @@ const allProducts = {
   ]
 };
   const coats = [
-    "https://tiva.onrender.com/media/coats/coat1.jpg",
-    "https://tiva.onrender.com/media/coats/coat2.jpg",
-    "https://tiva.onrender.com/media/coats/coat3.jpg",
-    "https://tiva.onrender.com/media/coats/coat4.jpg",
-    "https://tiva.onrender.com/media/coats/coat5.jpg",
+    "https://aajin.pythonanywhere.com/media/coats/coat1.jpg",
+    "https://aajin.pythonanywhere.com/media/coats/coat2.jpg",
+    "https://aajin.pythonanywhere.com/media/coats/coat3.jpg",
+    "https://aajin.pythonanywhere.com/media/coats/coat4.jpg",
+    "https://aajin.pythonanywhere.com/media/coats/coat5.jpg",
   ];
 
   const shirts = [
-    "https://tiva.onrender.com/media/shirts/shirt1_2.jpg",
-    "https://tiva.onrender.com/media/shirts/shirt2.jpg",
-    "https://tiva.onrender.com/media/shirts/shirt3.jpg",
-    "https://tiva.onrender.com/media/shirts/shirt4.jpg",
-    "https://tiva.onrender.com/media/shirts/shirt6.jpg",
+    "https://aajin.pythonanywhere.com/media/shirts/shirt1_2.jpg",
+    "https://aajin.pythonanywhere.com/media/shirts/shirt2.jpg",
+    "https://aajin.pythonanywhere.com/media/shirts/shirt3.jpg",
+    "https://aajin.pythonanywhere.com/media/shirts/shirt4.jpg",
+    "https://aajin.pythonanywhere.com/media/shirts/shirt6.jpg",
   ];
 
   const pants = [
-    "https://tiva.onrender.com/media/pants/pant1_2.jpg",
-    "https://tiva.onrender.com/media/pants/pant2.jpg",
-    "https://tiva.onrender.com/media/pants/pant3.jpg",
-    "https://tiva.onrender.com/media/pants/pant4.jpg",
-    "https://tiva.onrender.com/media/pants/pant5.jpg",
+    "https://aajin.pythonanywhere.com/media/pants/pant1_2.jpg",
+    "https://aajin.pythonanywhere.com/media/pants/pant2.jpg",
+    "https://aajin.pythonanywhere.com/media/pants/pant3.jpg",
+    "https://aajin.pythonanywhere.com/media/pants/pant4.jpg",
+    "https://aajin.pythonanywhere.com/media/pants/pant5.jpg",
   ];
 
   const tshirts = [
-  "https://tiva.onrender.com/media/tshirts/tshirt1.jpg",
-  "https://tiva.onrender.com/media/tshirts/tshirt2.jpg",
-  "https://tiva.onrender.com/media/tshirts/tshirt3.jpg",
-  "https://tiva.onrender.com/media/tshirts/tshirt4.jpg",
-  "https://tiva.onrender.com/media/tshirts/tshirt5.jpg",
+  "https://aajin.pythonanywhere.com/media/tshirts/tshirt1.jpg",
+  "https://aajin.pythonanywhere.com/media/tshirts/tshirt2.jpg",
+  "https://aajin.pythonanywhere.com/media/tshirts/tshirt3.jpg",
+  "https://aajin.pythonanywhere.com/media/tshirts/tshirt4.jpg",
+  "https://aajin.pythonanywhere.com/media/tshirts/tshirt5.jpg",
 ];
 
 const watches = [
-  "https://tiva.onrender.com/media/watches/watch1.jpg",
-  "https://tiva.onrender.com/media/watches/watch2.jpg",
-  "https://tiva.onrender.com/media/watches/watch3.jpg",
-  "https://tiva.onrender.com/media/watches/watch4.jpg",
-  "https://tiva.onrender.com/media/watches/watch5.jpg",
+  "https://aajin.pythonanywhere.com/media/watches/watch1.jpg",
+  "https://aajin.pythonanywhere.com/media/watches/watch2.jpg",
+  "https://aajin.pythonanywhere.com/media/watches/watch3.jpg",
+  "https://aajin.pythonanywhere.com/media/watches/watch4.jpg",
+  "https://aajin.pythonanywhere.com/media/watches/watch5.jpg",
 ];
 
 const perfumes = [
-  "https://tiva.onrender.com/media/perfumes/perfume1.jpg",
-  "https://tiva.onrender.com/media/perfumes/perfume2.jpg",
-  "https://tiva.onrender.com/media/perfumes/perfume3.jpg",
-  "https://tiva.onrender.com/media/perfumes/perfume4.jpg",
-  "https://tiva.onrender.com/media/perfumes/perfume5.jpg",
+  "https://aajin.pythonanywhere.com/media/perfumes/perfume1.jpg",
+  "https://aajin.pythonanywhere.com/media/perfumes/perfume2.jpg",
+  "https://aajin.pythonanywhere.com/media/perfumes/perfume3.jpg",
+  "https://aajin.pythonanywhere.com/media/perfumes/perfume4.jpg",
+  "https://aajin.pythonanywhere.com/media/perfumes/perfume5.jpg",
 ];
 
 const shoes = [
-  "https://tiva.onrender.com/media/shoes/shoe1.jpg",
-  "https://tiva.onrender.com/media/shoes/shoe2.jpg",
-  "https://tiva.onrender.com/media/shoes/shoe3.jpg",
-  "https://tiva.onrender.com/media/shoes/shoe4.jpg",
-  "https://tiva.onrender.com/media/shoes/shoe6.jpg",
+  "https://aajin.pythonanywhere.com/media/shoes/shoe1.jpg",
+  "https://aajin.pythonanywhere.com/media/shoes/shoe2.jpg",
+  "https://aajin.pythonanywhere.com/media/shoes/shoe3.jpg",
+  "https://aajin.pythonanywhere.com/media/shoes/shoe4.jpg",
+  "https://aajin.pythonanywhere.com/media/shoes/shoe6.jpg",
 ];
 
 const sandals = [
-  "https://tiva.onrender.com/media/sandals/sandal1.jpg",
-  "https://tiva.onrender.com/media/sandals/sandal2.jpg",
-  "https://tiva.onrender.com/media/sandals/sandal3.jpg",
-  "https://tiva.onrender.com/media/sandals/sandal4.jpg",
-  "https://tiva.onrender.com/media/sandals/sandal5.jpg",
+  "https://aajin.pythonanywhere.com/media/sandals/sandal1.jpg",
+  "https://aajin.pythonanywhere.com/media/sandals/sandal2.jpg",
+  "https://aajin.pythonanywhere.com/media/sandals/sandal3.jpg",
+  "https://aajin.pythonanywhere.com/media/sandals/sandal4.jpg",
+  "https://aajin.pythonanywhere.com/media/sandals/sandal5.jpg",
 ];
 
   return (

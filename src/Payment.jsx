@@ -26,7 +26,7 @@ function Payment() {
 
     try {
       const response = await fetch(
-        "https://tiva.onrender.com/api/create-order/",
+        "https://aajin.pythonanywhere.com/api/create-order/",
         {
           method: "POST",
           headers: {
@@ -51,7 +51,7 @@ function Payment() {
         handler: async function (response) {
 
   await fetch(
-    "https://tiva.onrender.com/api/save-order/",
+    "https://aajin.pythonanywhere.com/api/save-order/",
     {
       method: "POST",
       headers: {

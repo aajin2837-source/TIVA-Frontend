@@ -1,4 +1,4 @@
-const BASE_URL = "https://tiva.onrender.com/api";
+const BASE_URL = "https://aajin.pythonanywhere.com/api";
 
 export const API = {
   coats: `${BASE_URL}/products/coats/`,

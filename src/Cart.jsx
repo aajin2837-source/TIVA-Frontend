@@ -83,7 +83,7 @@ function Cart() {
 
     try {
       const response = await fetch(
-        `https://tiva.onrender.com/api/cart/update/${id}/`,
+        `https://aajin.pythonanywhere.com/api/cart/update/${id}/`,
         {
           method: "PATCH",
           headers: {
@@ -106,7 +106,7 @@ function Cart() {
   const removeItem = async (id) => {
     try {
       await fetch(
-        `https://tiva.onrender.com/api/cart/delete/${id}/`,
+        `https://aajin.pythonanywhere.com/api/cart/delete/${id}/`,
         {
           method: "DELETE",
         }
@@ -242,7 +242,7 @@ function Cart() {
                 key={item.id}
               >
                 <img
-                  src={`https://tiva.onrender.com${item.image.replace(
+                  src={`https://aajin.pythonanywhere.com${item.image.replace(
                     "/media/media/",
                     "/media/"
                   )}`}
