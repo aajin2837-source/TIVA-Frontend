@@ -7,6 +7,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaGoogle } from "react-icons/fa";
 import Login from "./Login";
 import Navbar from "./Navbar";
 import CustomAlert from "./CustomAlert";
+import.meta.env.VITE_API_URL
 
 function MainHome() {
   const navigate = useNavigate();
@@ -90,67 +91,67 @@ const allProducts = {
   ]
 };
   const coats = [
-    "https://aajin.pythonanywhere.com/media/coats/coat1.jpg",
-    "https://aajin.pythonanywhere.com/media/coats/coat2.jpg",
-    "https://aajin.pythonanywhere.com/media/coats/coat3.jpg",
-    "https://aajin.pythonanywhere.com/media/coats/coat4.jpg",
-    "https://aajin.pythonanywhere.com/media/coats/coat5.jpg",
+    `${import.meta.env.VITE_API_URL}/media/coats/coat1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/coats/coat2.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/coats/coat3.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/coats/coat4.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/coats/coat5.jpg`,
   ];
 
   const shirts = [
-    "https://aajin.pythonanywhere.com/media/shirts/shirt1_2.jpg",
-    "https://aajin.pythonanywhere.com/media/shirts/shirt2.jpg",
-    "https://aajin.pythonanywhere.com/media/shirts/shirt3.jpg",
-    "https://aajin.pythonanywhere.com/media/shirts/shirt4.jpg",
-    "https://aajin.pythonanywhere.com/media/shirts/shirt6.jpg",
+    `${import.meta.env.VITE_API_URL}/media/shirts/shirt1_2.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/shirts/shirt2.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/shirts/shirt3.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/shirts/shirt4.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/shirts/shirt6.jpg`,
   ];
 
   const pants = [
-    "https://aajin.pythonanywhere.com/media/pants/pant1_2.jpg",
-    "https://aajin.pythonanywhere.com/media/pants/pant2.jpg",
-    "https://aajin.pythonanywhere.com/media/pants/pant3.jpg",
-    "https://aajin.pythonanywhere.com/media/pants/pant4.jpg",
-    "https://aajin.pythonanywhere.com/media/pants/pant5.jpg",
+    `${import.meta.env.VITE_API_URL}/media/pants/pant1_2.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/pants/pant2.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/pants/pant3.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/pants/pant4.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/pants/pant5.jpg`,
   ];
 
   const tshirts = [
-  "https://aajin.pythonanywhere.com/media/tshirts/tshirt1.jpg",
-  "https://aajin.pythonanywhere.com/media/tshirts/tshirt2.jpg",
-  "https://aajin.pythonanywhere.com/media/tshirts/tshirt3.jpg",
-  "https://aajin.pythonanywhere.com/media/tshirts/tshirt4.jpg",
-  "https://aajin.pythonanywhere.com/media/tshirts/tshirt5.jpg",
+  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt2.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt3.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt4.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt5.jpg`,
 ];
 
 const watches = [
-  "https://aajin.pythonanywhere.com/media/watches/watch1.jpg",
-  "https://aajin.pythonanywhere.com/media/watches/watch2.jpg",
-  "https://aajin.pythonanywhere.com/media/watches/watch3.jpg",
-  "https://aajin.pythonanywhere.com/media/watches/watch4.jpg",
-  "https://aajin.pythonanywhere.com/media/watches/watch5.jpg",
+  `${import.meta.env.VITE_API_URL}/media/watches/watch1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/watches/watch2.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/watches/watch3.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/watches/watch4.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/watches/watch5.jpg`,
 ];
 
 const perfumes = [
-  "https://aajin.pythonanywhere.com/media/perfumes/perfume1.jpg",
-  "https://aajin.pythonanywhere.com/media/perfumes/perfume2.jpg",
-  "https://aajin.pythonanywhere.com/media/perfumes/perfume3.jpg",
-  "https://aajin.pythonanywhere.com/media/perfumes/perfume4.jpg",
-  "https://aajin.pythonanywhere.com/media/perfumes/perfume5.jpg",
+  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume2.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume3.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume4.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume5.jpg`,
 ];
 
 const shoes = [
-  "https://aajin.pythonanywhere.com/media/shoes/shoe1.jpg",
-  "https://aajin.pythonanywhere.com/media/shoes/shoe2.jpg",
-  "https://aajin.pythonanywhere.com/media/shoes/shoe3.jpg",
-  "https://aajin.pythonanywhere.com/media/shoes/shoe4.jpg",
-  "https://aajin.pythonanywhere.com/media/shoes/shoe6.jpg",
+  `${import.meta.env.VITE_API_URL}/media/shoes/shoe1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/shoes/shoe2.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/shoes/shoe3.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/shoes/shoe4.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/shoes/shoe6.jpg`,
 ];
 
 const sandals = [
-  "https://aajin.pythonanywhere.com/media/sandals/sandal1.jpg",
-  "https://aajin.pythonanywhere.com/media/sandals/sandal2.jpg",
-  "https://aajin.pythonanywhere.com/media/sandals/sandal3.jpg",
-  "https://aajin.pythonanywhere.com/media/sandals/sandal4.jpg",
-  "https://aajin.pythonanywhere.com/media/sandals/sandal5.jpg",
+  `${import.meta.env.VITE_API_URL}/media/sandals/sandal1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/sandals/sandal2.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/sandals/sandal3.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/sandals/sandal4.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/sandals/sandal5.jpg`,
 ];
 
   return (

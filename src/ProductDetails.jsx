@@ -17,6 +17,7 @@ import {
 } from "react-icons/fa";
 import Login from "./Login";
 import Navbar from "./Navbar";
+import.meta.env.VITE_API_UR
 function ProductDetails() {
   const { category, id } = useParams();
   const [reviews, setReviews] = useState([]);
@@ -29,7 +30,7 @@ function ProductDetails() {
   const navigate = useNavigate();
   useEffect(() => {
     fetch(
-  `https://aajin.pythonanywhere.com/api/reviews/?category=${category}&product_id=${id}`
+  `${import.meta.env.VITE_API_URL}/api/reviews/?category=${category}&product_id=${id}`
 )
   .then((res) => res.json())
   .then((data) => setReviews(data));
@@ -222,10 +223,10 @@ function ProductDetails() {
       <div className="details-container">
 
         <div className="details-image">
-          <img
-            src={`https://aajin.pythonanywhere.com${product.image}`}
-            alt={product.title}
-          />
+         <img
+  src={`${import.meta.env.VITE_API_URL}${product.image}`}
+  alt={product.title}
+/>
         </div>
 
         <div className="details-info">

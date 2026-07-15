@@ -83,7 +83,7 @@ function Cart() {
 
     try {
       const response = await fetch(
-        `https://aajin.pythonanywhere.com/api/cart/update/${id}/`,
+        `${import.meta.env.VITE_API_URL}/api/cart/update/${id}/`,
         {
           method: "PATCH",
           headers: {
@@ -106,7 +106,7 @@ function Cart() {
   const removeItem = async (id) => {
     try {
       await fetch(
-        `https://aajin.pythonanywhere.com/api/cart/delete/${id}/`,
+        `${import.meta.env.VITE_API_URL}/api/cart/delete/${id}/`,
         {
           method: "DELETE",
         }
@@ -242,12 +242,12 @@ function Cart() {
                 key={item.id}
               >
                 <img
-                  src={`https://aajin.pythonanywhere.com${item.image.replace(
-                    "/media/media/",
-                    "/media/"
-                  )}`}
-                  alt={item.title}
-                />
+  src={`${import.meta.env.VITE_API_URL}${item.image.replace(
+    "/media/media/",
+    "/media/"
+  )}`}
+  alt={item.title}
+/>
 
                 <div className="item-info">
                   <h3>{item.title}</h3>

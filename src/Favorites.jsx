@@ -11,6 +11,7 @@ import { API } from "./services/api";
 import "./MainHome.css";
 import Navbar from "./Navbar";
 import CustomAlert from "./CustomAlert";
+import.meta.env.VITE_API_URL
 function Favorites() {
   const navigate = useNavigate();
   const [alertMessage, setAlertMessage] = useState("");
@@ -205,9 +206,9 @@ function Favorites() {
               >
                 <div className="product-image">
                   <img
-                    src={`https://aajin.pythonanywhere.com${item.image}`}
-                    alt={item.title}
-                  />
+  src={`${import.meta.env.VITE_API_URL}${item.image}`}
+  alt={item.title}
+/>
                 </div>
 
                 <div className="product-details">

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Profile.css";
 import { useNavigate } from "react-router-dom";
 import CustomAlert from "./CustomAlert";
+import.meta.env.VITE_API_URL
 function Profile() {
   const [fullName, setFullName] = useState("");
   const [username, setUsername] = useState("");
@@ -13,9 +14,9 @@ function Profile() {
 
   useEffect(() => {
     fetch(
-      `https://aajin.pythonanywhere.com/api/profile/?user_id=${localStorage.getItem(
-        "user_id"
-      )}`
+      `${import.meta.env.VITE_API_URL}/api/profile/?user_id=${localStorage.getItem(
+      "user_id"
+    )}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -33,7 +34,7 @@ function Profile() {
   const updateProfile = async () => {
     try {
       const response = await fetch(
-        "https://aajin.pythonanywhere.com/api/profile/update/",
+        `${import.meta.env.VITE_API_URL}/api/profile/update/`,
         {
           method: "POST",
           headers: {

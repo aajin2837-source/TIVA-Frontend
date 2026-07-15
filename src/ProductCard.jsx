@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+// Replace the hardcoded URL with this:
+import.meta.env.VITE_API_URL
 function ProductCard({ item, addToCart }) {
   const navigate = useNavigate();
 
@@ -11,10 +12,10 @@ function ProductCard({ item, addToCart }) {
       style={{ cursor: "pointer" }}
     >
       <div className="product-image">
-        <img
-          src={`https://aajin.pythonanywhere.com${item.image}`}
-          alt={item.title}
-        />
+       <img
+  src={`${import.meta.env.VITE_API_URL}${item.image}`}
+  alt={item.title}
+/>
       </div>
 
       <div className="product-details">

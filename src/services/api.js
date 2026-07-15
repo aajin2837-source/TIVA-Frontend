@@ -1,4 +1,4 @@
-const BASE_URL = "https://aajin.pythonanywhere.com/api";
+const BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
 
 export const API = {
   coats: `${BASE_URL}/products/coats/`,

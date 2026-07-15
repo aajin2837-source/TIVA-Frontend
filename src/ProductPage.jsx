@@ -12,7 +12,7 @@ import {
   FaHeart,
   FaUser
 } from "react-icons/fa";
-
+import.meta.env.VITE_API_URL
 function ProductPage() {
   const { category } = useParams();
   const navigate = useNavigate();
@@ -379,10 +379,10 @@ function ProductPage() {
         {filteredProducts.map((item) => (
           <div className="product-card" key={item.id}>
             <div className="product-image">
-              <img
-                src={`https://aajin.pythonanywhere.com${item.image}`}
-                alt={item.title}
-              />
+             <img
+  src={`${import.meta.env.VITE_API_URL}${item.image}`}
+  alt={item.title}
+/>
             </div>
 
             <div className="product-details">

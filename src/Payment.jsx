@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Payment.css";
 import CustomAlert from "./CustomAlert";
 import { useNavigate } from "react-router-dom";
-
+import.meta.env.VITE_API_URL
 function Payment() {
   const [method, setMethod] = useState("");
   const [alertMessage, setAlertMessage] = useState("");
@@ -26,7 +26,7 @@ function Payment() {
 
     try {
       const response = await fetch(
-        "https://aajin.pythonanywhere.com/api/create-order/",
+        `${import.meta.env.VITE_API_URL}/api/create-order/`,
         {
           method: "POST",
           headers: {
@@ -51,7 +51,7 @@ function Payment() {
         handler: async function (response) {
 
   await fetch(
-    "https://aajin.pythonanywhere.com/api/save-order/",
+    `${import.meta.env.VITE_API_URL}/api/save-order/`,
     {
       method: "POST",
       headers: {
