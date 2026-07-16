@@ -4,7 +4,6 @@ import "./Register.css";
 import CustomAlert from "./CustomAlert";
 
 function Register() {
-
   const [full_name, setFullName] = useState("");
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -13,101 +12,98 @@ function Register() {
   const [alertMessage, setAlertMessage] = useState("");
 
   const handleRegister = async () => {
+    try {
+      const response = await fetch(API.register, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          full_name,
+          username,
+          email,
+          phone,
+          password,
+        }),
+      });
 
-    const response = await fetch(API.register, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        full_name,
-        username,
-        email,
-        phone,
-        password,
-      }),
-    });
+      const data = await response.json();
+      console.log("Server Response:", data);
 
-    const data = await response.json();
-    console.log("Server Response:", data);
-
-    if (response.ok) {
-      setAlertMessage("Registration Successful");
-
-      setFullName("");
-      setUsername("");
-      setEmail("");
-      setPhone("");
-      setPassword("");
-    } else {
-      setAlertMessage(data.error || "Registration Failed");
+      if (response.ok) {
+        setAlertMessage(data.message || "Registration Successful");
+        setFullName("");
+        setUsername("");
+        setEmail("");
+        setPhone("");
+        setPassword("");
+      } else {
+        // This will display the error from your Django backend
+        setAlertMessage(data.error || data.message || "Registration Failed");
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+      setAlertMessage("Failed to connect to server");
     }
   };
 
   return (
     <>
-    <div className="register-page">
+      <div className="register-page">
+        <div className="register-card">
+          <h2>Create Account</h2>
 
-      <div className="register-card">
+          <input
+            type="text"
+            placeholder="Full Name"
+            value={full_name}
+            onChange={(e) => setFullName(e.target.value)}
+          />
 
-        <h2>Create Account</h2>
+          <input
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
 
-        <input
-          type="text"
-          placeholder="Full Name"
-          value={full_name}
-          onChange={(e) => setFullName(e.target.value)}
-        />
+          <input
+            type="email"
+            placeholder="Email Address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
+          <input
+            type="text"
+            placeholder="Phone Number"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
 
-        <input
-          type="email"
-          placeholder="Email Address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-        <input
-          type="text"
-          placeholder="Phone Number"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-        />
+          <button className="register-btn" onClick={handleRegister}>
+            Register
+          </button>
 
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-
-        <button
-          className="register-btn"
-          onClick={handleRegister}
-        >
-          Register
-        </button>
-
-        <div className="register-footer">
-          Already have an account? <span>Login</span>
+          <div className="register-footer">
+            Already have an account? <span>Login</span>
+          </div>
         </div>
-
       </div>
 
-    </div>
-
-    {alertMessage && (
-      <CustomAlert
-        message={alertMessage}
-        onClose={() => setAlertMessage("")}
-      />
-    )}
+      {alertMessage && (
+        <CustomAlert
+          message={alertMessage}
+          onClose={() => setAlertMessage("")}
+        />
+      )}
     </>
   );
 }
