@@ -94,7 +94,7 @@ const allProducts = {
     `${import.meta.env.VITE_API_URL}/media/coats/coat1_1.jpg`,
     `${import.meta.env.VITE_API_URL}/media/coats/coat5_1.jpg`,
     `${import.meta.env.VITE_API_URL}/media/coats/coat2_1.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/coats/ coat3_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/coats/coat7_1.jpg`,
     `${import.meta.env.VITE_API_URL}/media/coats/coat4_1.jpg`,
   ];
 
