@@ -91,67 +91,67 @@ const allProducts = {
   ]
 };
   const coats = [
-    `${import.meta.env.VITE_API_URL}/media/coats/coat1.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/coats/coat2.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/coats/coat3.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/coats/coat4.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/coats/coat5.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/coats/coat1_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/coats/coat5_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/coats/coat2_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/coats/ coat3_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/coats/coat4_1.jpg`,
   ];
 
   const shirts = [
-    `${import.meta.env.VITE_API_URL}/media/shirts/shirt1_2.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/shirts/shirt2.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/shirts/shirt3.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/shirts/shirt4.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/shirts/shirt6.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/shirts/shirt10_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/shirts/shirt11_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/shirts/shirt1_2_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/shirts/shirt3_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/shirts/shirt4_1.jpg`,
   ];
 
   const pants = [
-    `${import.meta.env.VITE_API_URL}/media/pants/pant1_2.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/pants/pant2.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/pants/pant3.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/pants/pant4.jpg`,
-    `${import.meta.env.VITE_API_URL}/media/pants/pant5.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/pants/pant10_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/pants/pant1_2_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/pants/pant2_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/pants/pant3_1.jpg`,
+    `${import.meta.env.VITE_API_URL}/media/pants/pant4_1.jpg`,
   ];
 
   const tshirts = [
-  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt1.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt2.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt3.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt4.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt5.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt10_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt1_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt2_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt3_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/tshirts/tshirt4_1.jpg`,
 ];
 
 const watches = [
-  `${import.meta.env.VITE_API_URL}/media/watches/watch1.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/watches/watch2.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/watches/watch3.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/watches/watch4.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/watches/watch5.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/watches/watch10_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/watches/watch1_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/watches/watch2_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/watches/watch3_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/watches/watch4_1.jpg`,
 ];
 
 const perfumes = [
-  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume1.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume2.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume3.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume4.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume5.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume10_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume1_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume2_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume3_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/perfumes/perfume4_1.jpg`,
 ];
 
 const shoes = [
-  `${import.meta.env.VITE_API_URL}/media/shoes/shoe1.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/shoes/shoe2.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/shoes/shoe3.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/shoes/shoe4.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/shoes/shoe6.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/shoes/shoe10_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/shoes/shoe1_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/shoes/shoe2_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/shoes/shoe3_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/shoes/shoe4_1.jpg`,
 ];
 
 const sandals = [
-  `${import.meta.env.VITE_API_URL}/media/sandals/sandal1.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/sandals/sandal2.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/sandals/sandal3.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/sandals/sandal4.jpg`,
-  `${import.meta.env.VITE_API_URL}/media/sandals/sandal5.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/sandals/sandal10_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/sandals/sandal1_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/sandals/sandal2_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/sandals/sandal3_1.jpg`,
+  `${import.meta.env.VITE_API_URL}/media/sandals/sandal4_1.jpg`,
 ];
 
   return (
